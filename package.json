@@ -1,0 +1,28 @@
+{
+  "name": "node-db4-project",
+  "version": "1.0.0",
+  "description": "Challenge for Node DB4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MileyWright/Node-db4-Project.git"
+  },
+  "author": "Miley Wright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MileyWright/Node-db4-Project/issues"
+  },
+  "homepage": "https://github.com/MileyWright/Node-db4-Project#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.20.8",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
