@@ -14,7 +14,21 @@ exports.up = function(knex) {
             .notNullable();
     })
     .createTable('Recipe_Book', tbl => {
-        
+        tbl.primary(['recipe_id', 'ingredient_id']);
+        tbl.integer('recipe_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('Recipes')
+        tbl.integer('ingredient_id')
+            .unsigned()
+            .notNullable()
+            .references('id')
+            .inTable('Ingredients')
+        tbl.float('quantity', [0])
+            .notNullable()
+        tbl.string('unit', 255)
+            .notNullable();
     })
 };
 
